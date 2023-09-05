@@ -1,0 +1,14 @@
+from random import randint
+print("Hello world")
+upper = int(input("Enter upper bound:\n"))
+lower = int(input("Enter lower bound:\n"))
+target = randint(lower, upper)
+guess = 0
+while (guess != target):
+    guess = int(input("Enter your guess:\n"))
+    if (guess < target):
+        print("Wrong! You guessed too low")
+    elif (guess > target):
+        print("Wrong! You guessed too high")
+    else:
+        print("You got it! The number is", target)
